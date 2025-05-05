@@ -89,7 +89,7 @@ async function flood() {
     const floodPromises = [];
     for (let i = 1; i <= amount; i++) {
         floodPromises.push((async () => {
-            const IGN = `\x20 \x20 \x20 ${name} ${randstr()}`;
+            const IGN = `\x20\x20\x20${name}${randstr()}`;
             const response = await fetch("https://fb.blooket.com/c/firebase/join", {
                 body: JSON.stringify({ id, name: IGN }),
                 headers: { Cookie: cookies[i % cookies.length] },

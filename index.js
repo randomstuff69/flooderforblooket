@@ -115,7 +115,7 @@ async function flood() {
             const auth = firebase.auth(liveApp);
             await auth.setPersistence(firebase.auth.Auth.Persistence.NONE).catch(console.error);
             await auth.signInWithCustomToken(fbToken).catch(console.error);
-            await liveApp.database().ref(`${id}/c/${IGN}`).set({ b: "Rainbow Astronaut", bg: "", cr: botMsg, g: botMsg, f: botMsg, w: botMsg, d: botMsg, xp: botMsg, c: botMsg, ca: botMsg });
+            await liveApp.database().ref(`${id}/c/${IGN}`).update({ b: "Rainbow Astronaut", bg: "", pr:0, cr: botMsg, g: botMsg, f: botMsg, w: botMsg, d: botMsg, xp: botMsg, c: botMsg, ca: botMsg });
             await liveApp.delete();
             console.log(`${IGN} | ${id}`.bold.green);
         })());

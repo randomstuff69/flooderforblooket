@@ -1,0 +1,1 @@
+to use this download the folder and right click the blank area click the open in command prompt and then do `node .` in it![image](https://github.com/user-attachments/assets/655c5d78-52cd-4d32-92fb-fe56ecc25c2f)

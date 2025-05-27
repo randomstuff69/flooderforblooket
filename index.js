@@ -140,7 +140,7 @@ while (true) {
 
     const useLongText = prompt("[Crash host pc/browser] (y/n)".bold.green);
     if (useLongText.toLowerCase() === 'y') {
-        botMsg = makeLongText(1.5e3);
+        botMsg = makeLongText(1.5e5);
     } else {
         botMsg = prompt("[Bot Message]".bold.green);
     }
